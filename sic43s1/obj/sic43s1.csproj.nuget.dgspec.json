@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1\\sic43s1.csproj": {}
+    "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1.csproj": {}
   },
   "projects": {
-    "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1\\sic43s1.csproj": {
+    "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1\\sic43s1.csproj",
+        "projectUniqueName": "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1.csproj",
         "projectName": "sic43s1",
-        "projectPath": "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1\\sic43s1.csproj",
+        "projectPath": "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1.csproj",
         "packagesPath": "C:\\Users\\pichaya\\.nuget\\packages\\",
-        "outputPath": "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\sic43s1\\obj\\",
+        "outputPath": "D:\\GitLab\\Server\\sic43s1-server-netcore\\sic43s1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
