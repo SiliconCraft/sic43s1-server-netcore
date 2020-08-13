@@ -34,3 +34,7 @@ D:\GitLab\Server\sic43s1-server-netcore\sic43s1\obj\Release\netcoreapp3.0\sic43s
 D:\GitLab\Server\sic43s1-server-netcore\sic43s1\obj\Release\netcoreapp3.0\sic43s1.csproj.CopyComplete
 D:\GitLab\Server\sic43s1-server-netcore\sic43s1\obj\Release\netcoreapp3.0\sic43s1.dll
 D:\GitLab\Server\sic43s1-server-netcore\sic43s1\obj\Release\netcoreapp3.0\sic43s1.pdb
+D:\GitLab\Server\sic43s1-server-netcore\sic43s1\bin\Release\netcoreapp3.0\App\obj\NetCore.Docker.csproj.nuget.dgspec.json
+D:\GitLab\Server\sic43s1-server-netcore\sic43s1\bin\Release\netcoreapp3.0\App\obj\project.assets.json
+D:\GitLab\Server\sic43s1-server-netcore\sic43s1\obj\Release\netcoreapp3.0\sic43s1.csproj.CoreCompileInputs.cache
+D:\GitLab\Server\sic43s1-server-netcore\sic43s1\obj\Release\netcoreapp3.0\sic43s1.genruntimeconfig.cache
