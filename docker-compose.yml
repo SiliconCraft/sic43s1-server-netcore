@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sic43s1_aspnetcore_server:
+    image: ${DOCKER_REGISTRY-}sic43s1aspnetcoreserver
+    build:
+      context: .
+      dockerfile: sic43s1_aspnetcore_server\Dockerfile
