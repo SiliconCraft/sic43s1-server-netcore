@@ -1,1 +1,0 @@
-# sic43s1-server-netcore

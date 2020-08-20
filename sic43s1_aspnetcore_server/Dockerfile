@@ -1,25 +1,22 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
-#For more information, please see https://aka.ms/containercompat
-
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.1-nanoserver-1903 AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1-nanoserver-1903 AS build
-WORKDIR /src
-COPY ["sic43s1_aspnetcore_server/sic43s1_aspnetcore_server.csproj", "sic43s1_aspnetcore_server/"]
-RUN dotnet restore "sic43s1_aspnetcore_server/sic43s1_aspnetcore_server.csproj"
-COPY . .
-WORKDIR "/src/sic43s1_aspnetcore_server"
-RUN dotnet build "sic43s1_aspnetcore_server.csproj" -c Release -o /app/build
+# Copy csproj and restore as distinct layers
+COPY . ./app
+RUN dotnet restore
 
-FROM build AS publish
-RUN dotnet publish "sic43s1_aspnetcore_server.csproj" -c Release -o /app/publish
+# Copy everything else and build
+COPY . ./app
+RUN dotnet publish -c Release -o out
 
-FROM base AS final
+# Copy everything else and build
+COPY . ./app
+RUN dotnet publish -c Debug -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build-env /app/out .
+EXPOSE 8080
+ENV ASPNETCORE_URLS=http://*:8080
 ENTRYPOINT ["dotnet", "sic43s1_aspnetcore_server.dll"]

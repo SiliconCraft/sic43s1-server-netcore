@@ -5,7 +5,6 @@ services:
     image: sic43s1aspnetcoreserver:dev
     container_name: sic43s1_aspnetcore_server
     build:
-      target: base
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "sic43s1_aspnetcore_server"

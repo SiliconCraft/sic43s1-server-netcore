@@ -48,6 +48,7 @@ G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\bin\Release\netc
 G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\bin\Release\netcoreapp2.1\sic43s1_aspnetcore_server.pdb
 G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\bin\Release\netcoreapp2.1\sic43s1_aspnetcore_server.Views.dll
 G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\bin\Release\netcoreapp2.1\sic43s1_aspnetcore_server.Views.pdb
+G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\obj\Release\netcoreapp2.1\sic43s1_aspnetcore_server.csprojAssemblyReference.cache
 G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\obj\Release\netcoreapp2.1\sic43s1_aspnetcore_server.AssemblyInfoInputs.cache
 G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\obj\Release\netcoreapp2.1\sic43s1_aspnetcore_server.AssemblyInfo.cs
 G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server\obj\Release\netcoreapp2.1\sic43s1_aspnetcore_server.csproj.CoreCompileInputs.cache
