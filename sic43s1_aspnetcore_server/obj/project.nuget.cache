@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3z/AHuF1jrFOWG4Ly2na/njDvmMS+WL6eOWGRoXw/B842GLqbeIJk4+MkHz4w5qxjh3ySGIbYu9A+NLDPDoHA==",
+  "dgSpecHash": "07kxrrANXnwcV+G5mLhCJ4a9GTf4LM3SW7VSjbBiRxpU/8hxTwonqTs2kOGCnQIUeWFKpFtqFiLXpS5MMtYp4w==",
   "success": true,
-  "projectFilePath": "G:\\SIC work\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server.csproj",
+  "projectFilePath": "G:\\SIC work\\sic43s1-server-netcore\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows 10\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\Windows 10\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",

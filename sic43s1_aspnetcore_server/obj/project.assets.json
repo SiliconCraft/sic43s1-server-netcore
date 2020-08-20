@@ -11899,11 +11899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\SIC work\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server.csproj",
+      "projectUniqueName": "G:\\SIC work\\sic43s1-server-netcore\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server.csproj",
       "projectName": "sic43s1_aspnetcore_server",
-      "projectPath": "G:\\SIC work\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server.csproj",
+      "projectPath": "G:\\SIC work\\sic43s1-server-netcore\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server.csproj",
       "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-      "outputPath": "G:\\SIC work\\sic43s1_aspnetcore_server\\sic43s1_aspnetcore_server\\obj\\",
+      "outputPath": "G:\\SIC work\\sic43s1-server-netcore\\sic43s1_aspnetcore_server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11966,7 +11966,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   },

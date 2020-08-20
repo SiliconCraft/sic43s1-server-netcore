@@ -5,6 +5,7 @@ services:
     image: sic43s1aspnetcoreserver:dev
     container_name: sic43s1_aspnetcore_server
     build:
+      target: base
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "sic43s1_aspnetcore_server"
@@ -12,18 +13,18 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_sic43s1_aspnetcore_server$
     volumes:
-      - G:\SIC work\sic43s1_aspnetcore_server\sic43s1_aspnetcore_server:C:\app
-      - G:\SIC work\sic43s1_aspnetcore_server:C:\src
-      - C:\Users\Windows 10\onecoremsvsmon\16.6.0313.0:C:\remote_debugger:ro
-      - C:\Users\Windows 10\.nuget\packages\:c:\.nuget\packages:ro
+      - G:\SIC work\sic43s1-server-netcore\sic43s1_aspnetcore_server:C:\app
+      - G:\SIC work\sic43s1-server-netcore:C:\src
+      - C:\Users\Windows 10\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_sic43s1_aspnetcore_server$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages  \"C:\\app\\bin\\Release\\netcoreapp2.1\\sic43s1_aspnetcore_server.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_sic43s1_aspnetcore_server$ \"C:\\app\\bin\\Release\\netcoreapp2.1\\sic43s1_aspnetcore_server.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
