@@ -13,10 +13,9 @@ This project provides an example ASP.NET Core project for SIC43S1 Smart Authenti
 
 SIC43S1 Tag provides 4 distinct NDEF contents coded in Hexadecimal string which can be pass to web service directly. The contents including
 1. **UID** or **Unique ID** **:** 7-bytes UID of this Tag (i.e. "39493000012345")
-1. **Tamper Flag:** 1-byte content reflect status of tamper pin. 
-If tamper pin is connected to the GND, the result is "00". 
+1. **Temporary Flag:** 1-byte content of temporary pin. 
 1. **Time-Stamp:** 4-bytes randomly increasing value (each step of increasing is 1 to 255). This content always increases each time the tag has been read.
-1. **Smart Authenticated Code:** 16-bytes of stream cipher with input from Time-stamp, Tamper Flag and UID.
+1. **Smart Authenticated Code:** 16-bytes of stream cipher with input from Time-stamp, Temporary Flag and UID.
 
 ## Getting Started
 
@@ -78,7 +77,7 @@ Use SIC43S1 Writer App on Android NFC Phone to customize SIC43S1 Tag as the expl
     * **Parameter 3:** "TS"
     * **Parameter 4:** "SAC"
 
-After completely customize SIC43S1 Tag with the setting above, each time you tap the SIC43S1 tag to NFC Phone (iPhone, Android or any NDEF support device), the web page will display a table of Tamper Flag, Time Stamp value and Smart Authenticated Code value which keep changing. Especially for the smart authenticated code value, it will be a match between "From Tag" and "From Server" column. This mean that server-side application (which calculate smart authenticated code based on same Smart Authenticated Code Key) can check the authenticity of SIC43S1 Tag.
+After completely customize SIC43S1 Tag with the setting above, each time you tap the SIC43S1 tag to NFC Phone (iPhone, Android or any NDEF support device), the web page will display a table of Temporary Flag, Time Stamp value and Smart Authenticated Code value which keep changing. Especially for the smart authenticated code value, it will be a match between "From Tag" and "From Server" column. This mean that server-side application (which calculate smart authenticated code based on same Smart Authenticated Code Key) can check the authenticity of SIC43S1 Tag.
 
 ### Installing on Google Cloud Platform
 
@@ -180,7 +179,7 @@ Use SIC43S1 Writer App on Android NFC Phone to customize SIC43S1 Tag as the expl
     * **Parameter 3:** "TS"
     * **Parameter 4:** "SAC"
 
-After completely customize SIC43S1 Tag with the setting above, each time you tap the SIC43S1 tag to NFC Phone (iPhone, Android or any NDEF support device), the web page will display a table of Tamper Flag, Time Stamp value and Smart Authenticated Code value which keep changing. Especially for the smart authenticated code value, it will be a match between "From Tag" and "From Server" column. This mean that server-side application (which calculate smart authenticated code based on same Smart Authenticated Code Key) can check the authenticity of SIC43S1 Tag.
+After completely customize SIC43S1 Tag with the setting above, each time you tap the SIC43S1 tag to NFC Phone (iPhone, Android or any NDEF support device), the web page will display a table of Temporary Flag, Time Stamp value and Smart Authenticated Code value which keep changing. Especially for the smart authenticated code value, it will be a match between "From Tag" and "From Server" column. This mean that server-side application (which calculate smart authenticated code based on same Smart Authenticated Code Key) can check the authenticity of SIC43S1 Tag.
 
 
 ## Usage
@@ -210,7 +209,7 @@ mac.BlockUpdate(plaintext, 0, plaintext.Length);
 byte[] cmac = MacUtilities.DoFinal(mac);
 ```
 
-The Bouncy Castle Crypto APIs calculate smart authenticated code. It requires *128 bits-Key* (input as a 32-characters hexadecimal string) and *32 bits Time Stamp* + *28 bits UID* + *8 bits of Tamper Flag* or *68 bits iv* (input as a 17-characters hexadecimal string).
+The Bouncy Castle Crypto APIs calculate smart authenticated code. It requires *128 bits-Key* (input as a 32-characters hexadecimal string) and *32 bits Time Stamp* + *28 bits UID* + *8 bits of Temporary Flag* or *68 bits iv* (input as a 17-characters hexadecimal string).
 
 ### 2: Verify increasing of time-stamp value
 

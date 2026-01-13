@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sic43s1-netcore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b88f4615acaab2cc242fe820e550d531696441e")]
 [assembly: System.Reflection.AssemblyProductAttribute("sic43s1-netcore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sic43s1-netcore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

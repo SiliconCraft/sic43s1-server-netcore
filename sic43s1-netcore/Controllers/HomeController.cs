@@ -58,21 +58,21 @@ namespace sic43s1_netcore.Controllers
                     }
                 }
 
-                string tamperStatus;
+                string temporaryStatus;
                 if (TF == Encoding.UTF8.GetString(tfByte))
                 {
-                    tamperStatus = "Corrected";
+                    temporaryStatus = "Corrected";
                 }
                 else
                 {
-                    tamperStatus = "Incorrected";
+                    temporaryStatus = "Incorrected";
                 }
 
                 ViewBag.ResultViewModel = new ResultViewModel(
                     Encoding.UTF8.GetString(tfByte),
                     BitConverter.ToString(cmac).Replace("-", ""),
                     rlcStatus,
-                    tamperStatus
+                    temporaryStatus
                     );
 
                 return View();

@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = sic43s1_netcore
+build_property.ProjectDir = C:\Users\pawarawat\Downloads\sic43s1-server-netcore\sic43s1-netcore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
