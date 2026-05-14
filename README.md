@@ -113,7 +113,7 @@ git clone https://github.com/SiliconCraft/sic43s1-server-netcore.git
 
 2. Move the directory into the project folder
 ```
-cd sic43s1-server-netcore/sic43s1-netcore
+cd sic43s1-server-netcore/Sic43s1Cmac
 ```
 
 3. run the ASP.NET Core app on port 8080

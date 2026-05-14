@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FH2E2WRD1n8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pawarawat\\Documents\\CSharp\\sic43s1-server-netcore\\Sic43s1Cmac\\Sic43s1Cmac.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pawarawat\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}
